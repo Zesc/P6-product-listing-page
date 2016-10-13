@@ -1,0 +1,198 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Ruslan+Display';
+
+
+body{
+    background: #EAE8EA;
+}
+
+h1{
+    text-align: center;
+    margin: 20px auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3ACB87;
+    color: #3ACB87;
+    font-family: 'Ruslan Display', cursive;
+    font-size: 45px;
+}
+
+.p-container{
+    height: 170px;
+    padding: 20px;
+    margin: 20px 20px;
+    color: #9B9699;
+    background-color: #FDFDFE;
+    font-family: 'Open Sans Condensed', sans-serif;;
+}
+
+img{
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+    background: black;
+
+}
+
+.description{
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 150px;
+    margin-left: 10px;
+}
+
+.btn-container{
+    float: left;
+}
+
+label, input{
+    margin-bottom: 10px;
+}
+
+#quantity{
+    text-align: end;
+    width: 50px;
+}
+
+button[type="button"]{
+    width: 125px;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid  #3ACB87;
+    background:  #3ACB87;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+span{
+    position: relative;
+    left: 25px;
+    color: white;
+}
+
+select{
+    position: relative;
+    text-align: center;
+    border: 0 solid #3ACB87;
+    background: #3ACB87;
+    float: right;
+    font-size: 14px;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;;
+}
+
+form{
+    background: #3ACB87;
+    padding: 8px;
+    border: 1px solid #3ACB87;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.price{
+    border-radius: 5px;
+    text-align: center;
+    background-color: #3ACB87;
+    font-size: 20px;
+    color: rgb(238, 0, 0);
+}
+
+.price > p{
+    margin: 5px;
+}
+
+.shoppingCart-container{
+    position: relative;
+}
+
+.col-left{
+    text-align: center;
+    float: left;
+    width: 47%;
+    padding-bottom: 20px;
+    background-color: white;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #9B9699;
+}
+.col-right{
+    text-align: center;
+    float: left;
+    position: relative;
+    width: 47%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #9B9699;
+}
+
+.subtotal-container, .tax-container, .ship-container, .total-container{
+    width: 90%;
+    margin: -20px auto;
+    overflow: hidden;
+}
+
+.first{
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+.second{
+    float: left;
+    overflow: hidden;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 10px;
+}
+
+.shoppingCart-item{
+    width: 90%;
+    margin: -20px auto;
+    overflow: hidden;
+}
+
+.a{
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.b{
+    float: left;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.c{
+    float: left;
+    padding: 10px;
+    text-align: end;
+    width: 50%;
+    margin: 20px auto;
+}
+
+#shoppingCart-title{
+    font-family:'Ruslan Display', cursive;
+    font-size: 35px;
+    color: #3ACB87;
+}
+
+#coupon, #con-shopping{
+    width: 175px;
+    height: 40px;
+    margin-bottom: 5px;
+    border: 1px solid #3ACB87;
+    background-color: #3ACB87;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
