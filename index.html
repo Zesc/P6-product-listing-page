@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet">
     <title>Project 6: Product Listing Page</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 </head>
 <body>
-    <h1>BOOK LIST OF THE DAY</h1>
+    <div class='title-container'>
+        <h1>book list of the day</h1>
+    </div>
+
     <div class="p-container">
         <img >
         <div class="description">
@@ -15,7 +19,6 @@
             <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Dolor emque, eum fuga! Enim nesciunt non dolorum excepturi quisquam iste.</p>
         </div>
         <div class="btn-container">
-
             <div class="price">
                 <p>$10.80</p>
             </div>
@@ -39,9 +42,12 @@
                     </select>
                 </form>
             </div>
-            <button type="button">ADD TO CART</button><br>
+            <div class='atc-btn'>
+                <button type="button">ADD TO CART</button><br>
+            </div>
         </div>
     </div>
+
     <!--Second product-->
     <div class="p-container">
         <img >
@@ -74,9 +80,12 @@
                     </select>
                 </form>
             </div>
-            <button type="button">ADD TO CART</button><br>
+            <div class='atc-btn'>
+                <button type="button">ADD TO CART</button><br>
+            </div>
         </div>
     </div>
+
     <!--Third product-->
     <div class="p-container">
         <img >
@@ -86,10 +95,10 @@
             <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Dolor emque, eum fuga! Enim nesciunt non dolorum excepturi quisquam iste.</p>
         </div>
         <div class="btn-container">
+            <div class="price">
+                <p>$13.95</p>
+            </div>
             <div class="btn-quantity">
-                <div class="price">
-                    <p>$13.95</p>
-                </div>
                 <form>
                     <span>Qty:</span>
                     <select>
@@ -109,9 +118,12 @@
                     </select>
                 </form>
             </div>
-            <button type="button">ADD TO CART</button><br>
+            <div class='atc-btn'>
+                <button type="button">ADD TO CART</button><br>
+            </div>
         </div>
     </div>
+
     <!--Fourth product-->
     <div class="p-container">
         <img >
@@ -144,9 +156,12 @@
                     </select>
                 </form>
             </div>
-            <button type="button">ADD TO CART</button><br>
+            <div class='atc-btn'>
+                <button type="button">ADD TO CART</button><br>
+            </div>
         </div>
     </div>
+
     <!--Fifth product-->
     <div class="p-container">
         <img >
@@ -179,9 +194,12 @@
                     </select>
                 </form>
             </div>
-            <button type="button">ADD TO CART</button><br>
+            <div class='atc-btn'>
+                <button type="button">ADD TO CART</button><br>
+            </div>
         </div>
     </div>
+
     <!--Sixth product-->
     <div class="p-container">
         <img >
@@ -214,9 +232,12 @@
                     </select>
                 </form>
             </div>
-            <button type="button">ADD TO CART</button><br>
+            <div class='atc-btn'>
+                <button type="button">ADD TO CART</button><br>
+            </div>
         </div>
     </div>
+
     <!--Seventh product-->
     <div class="p-container">
         <img >
@@ -226,10 +247,10 @@
             <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Dolor emque, eum fuga! Enim nesciunt non dolorum excepturi quisquam iste.</p>
         </div>
         <div class="btn-container">
+            <div class="price">
+                <p>$9.19</p>
+            </div>
             <div class="btn-quantity">
-                <div class="price">
-                    <p>$9.19</p>
-                </div>
                 <form>
                     <span>Qty:</span>
                     <select>
@@ -249,9 +270,12 @@
                     </select>
                 </form>
             </div>
-            <button type="button">ADD TO CART</button><br>
+            <div class='atc-btn'>
+                <button type="button">ADD TO CART</button><br>
+            </div>
         </div>
     </div>
+
     <!--Eighth product-->
     <div class="p-container">
         <img >
@@ -284,9 +308,12 @@
                     </select>
                 </form>
             </div>
-            <button type="button">ADD TO CART</button><br>
+            <div class='atc-btn'>
+                <button type="button">ADD TO CART</button><br>
+            </div>
         </div>
     </div>
+
     <!--Ninth product-->
     <div class="p-container">
         <img >
@@ -319,9 +346,12 @@
                     </select>
                 </form>
             </div>
-            <button type="button">ADD TO CART</button><br>
+            <div class='atc-btn'>
+                <button type="button">ADD TO CART</button><br>
+            </div>
         </div>
     </div>
+
     <!--Tenth product-->
     <div class="p-container">
         <img >
@@ -354,46 +384,72 @@
                     </select>
                 </form>
             </div>
-            <button type="button">ADD TO CART</button><br>
+            <div class='atc-btn'>
+                <button type="button">ADD TO CART</button><br>
+            </div>
         </div>
     </div>
+
     <!--Shopping cart-->
-    <div class="shoppingCart-container">
+    <div class="cart-container">
         <div class="col-left">
-            <p id="shoppingCart-title">Shopping Cart</p>
-            <div class="shoppingCart-item">
-                <img class="a"><p class="b">Item title 1</p><p class="c">Qty: ##</p>
+            <div class="cart-title">
+                <h2>SHOPPING CART SUMMARY</h2>
             </div>
-            <div class="shoppingCart-item">
-                <img class="a"><p class="b">Item title 2</p><p class="c">Qty: ##</p>
+            <div class="cart-item">
+                <img>
+                <div class="cart-item-desc">
+                    <p>Item name 1</p>
+                    <p>Quantity: ##</p>
+                </div>
             </div>
-            <div class="shoppingCart-item">
-                <img class="a"><p class="b">Item title 3</p><p class="c">Qty: ##</p>
+            <div class="cart-item">
+                <img>
+                <div class="cart-item-desc">
+                    <p>Item name 2</p>
+                    <p>Quantity: ##</p>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img>
+                <div class='cart-item-desc'>
+                    <p>Item name 3</p>
+                    <p>Quantity: ##</p>
+                </div>
             </div>
         </div>
         <div class="col-right">
-            <div class="subtotal-container">
-                <p class="first">Subtotal:</p><div class="second">$####</div>
+            <div class="promo-container">
+                <div>
+                    <input type="tec" name="promo code" placeholder="ENTER PROMO CODE">
+                </div>
+                <div>
+                    <button class="btn-apply">APPLY</button>
+                </div>
             </div>
-            <div class="tax-container">
-                <p class="first">tax:</p><div class="second">$####</div>
+            <div class='order-container'>
+                <h3>ORDER SUMMARY</h3>
+                <div class="order-sub-container">
+                    <div>Subtotal:</div>
+                    <div>$xx.xx</div>
+                </div>
+                <div class="order-sub-container">
+                    <div>Discount:</div>
+                    <div>$xx.xx</div>
+                </div>
+                <div class="order-sub-container">
+                    <div>Estimated Shipping:</div>
+                    <div>$xx.xx</div>
+                </div>
+                <div class="order-sub-container">
+                    <div>ORDER TOTAL:</div>
+                    <div>$xx.xx</div>
+                </div>
+                <div class='checkout-container'>
+                    <button class="btn-checkout">PROCEED TO CHECKOUT</button>
+                </div>
             </div>
-            <div class="ship-container">
-                <p class="first">shipping/handling:</p><div class="second">$####</div>
-            </div>
-            <div class="total-container">
-                <p class="first">Total:</p><div class="second">$####</div>
-            </div>
-            <br>
-            <br>
-            <label>Coupon:<input type="text"></label>
-            <br>
-            <button id="coupon">APPLY COUPON</button><br>
-            <button id="con-shopping">CONTINUE SHOPPING</button>
         </div>
-    </div>
-    <div class="back-to-main">
-        <a href="https://zesc.github.io/P1-Multi-Page-Website/">BACK TO MAIN PAGE</a>
     </div>
 </body>
 </html>
