@@ -1,1 +1,1 @@
-# Project 6: Product Listing Page
+# Project 5: Product Listing Page
