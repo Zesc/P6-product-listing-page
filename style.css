@@ -19,13 +19,20 @@ div.title-container h1 {
     font-weight: 400;
 }
 
+div.container-even {
+    background-color: #f9f9f9;
+}
+
+div.container-odd {
+    background-color: #f2f2f2;
+}
+
 div.p-container {
     display: block;
     overflow: hidden;
     position: relative;
     width: 100%;
     padding: 20px 0;
-    background-color:#fff; 
 }
 
 /* book image container*/
@@ -47,21 +54,25 @@ div.p-container div.description {
     float: left;
 }
 
+div.p-container div.description p {
+    margin: 5px 0;
+}
+
 /* button container */
 div.p-container div.btn-container {
     display: block;
     width: 10%;
     float: right;
+    margin-right: 2%;
 }
 
 div.price {
-    border-radius: 5px;
-    font-size: 20px;
     color: #3ba3ac;
 }
 
-div.price > p {
-    margin: 5px 0;
+div.price p {
+    font-size: 1.3em;
+    margin: 0;
 }
 
 div.btn-quantity {
@@ -247,3 +258,5 @@ div.order-container div.checkout-container button.btn-checkout {
     padding: 20px 0;
     border: none;
 }
+
+/*continue style btn-container then move to adding functionality to the page.*/
