@@ -25,9 +25,10 @@ div.p-container {
     position: relative;
     width: 100%;
     padding: 20px 0;
-    background-color:#3ba3ac; 
+    background-color:#fff; 
 }
 
+/* book image container*/
 div.p-container img {
     position: relative;
     width: 15%;
@@ -35,16 +36,18 @@ div.p-container img {
     float: left;
 }
 
+/* book description container*/
 div.p-container div.description {
     position: relative;
     margin-left: 10px;
-    color: #fff;
+    color: #555656FF;
     width: 55%;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     float: left;
 }
 
+/* button container */
 div.p-container div.btn-container {
     display: block;
     width: 10%;
@@ -53,33 +56,28 @@ div.p-container div.btn-container {
 
 div.price {
     border-radius: 5px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
     font-size: 20px;
     color: #3ba3ac;
 }
 
 div.price > p {
-    padding: 5px 0;
     margin: 5px 0;
 }
 
 div.btn-quantity {
     color: #3ba3ac;
-    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
 }
 
 div.btn-quantity form {
-    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
     padding: 5px 0;
     margin: 5px 0;
 }
 
-div.btn-quantity form span {
+div.btn-quantity form label {
     position: relative;
-    left: 25px;
+    float: left;
     color: #3ba3ac;
 }
 
@@ -87,24 +85,23 @@ div.btn-quantity select {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 17px;
-    float: right;
+    float: left;
     color: #3ba3ac;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: none;
 }
 
-div.atc-btn > button[type='button']{
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.8);
+div.atc-btn button[type='button']{
     color: #3ba3ac;
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: bold;
     border: none;
-    padding: 5px 5px;
+    padding: 0;
+    margin: 0;
 }
 
 div.atc-btn button[type="button"]:hover {
-    background-color: rgba(0, 0, 0, .7);
+
 }
 
 div.atc-btn button[type="button"]:focus, div.atc-btn button[type="button"]:active {
