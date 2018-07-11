@@ -152,11 +152,6 @@ div.cart-container {
   background-color: #fff;
   border-radius: 3px 0 0 3px;
   box-shadow: 0 1px 5px rgba(59, 163, 172, 0.15);
-  transition: .9s right ease-in-out;
-}
-
-div.cart-containerShow{
-  right: 0;
 }
 
 div.cart-container h2 {
@@ -166,47 +161,3 @@ div.cart-container h2 {
   margin: 10px 30px;
   color: #3ba3ac;
 }
-
-div.cart-item {
-  position: relative;
-  overflow: hidden;
-  margin: 10px 30px;
-
-}
-
-div.cart-item img {
-  width: 120px;
-  height: 120px;
-  float: left;
-}
-
-div.cart-item div.item-description {
-  float: left;
-  margin-right: 3%;
-  position: relative;
-}
-
-div.cart-item div.item-description > p{
-  font-size: .8em;
-  margin: 10px 0 0 0;
-}
-
-div.cart-item button.cart-item-btn {
-  display: block;
-  float: right;
-  border: 1px solid grey;
-  border-radius: 3px;
-  margin-bottom: 1%;
-}
-
-/* Promo code section */
-.promo-code-container {
-  margin: 10px 30px;
-}
-
-.promo-code-container input {
-  margin: 0;
-  padding: 0;
-}
-
-/* Total price section */

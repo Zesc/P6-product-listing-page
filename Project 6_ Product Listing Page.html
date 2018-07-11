@@ -1,51 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0053)file:///Users/zesc/P6-product-listing-page/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <title>Project 6: Product Listing Page</title>
-    <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
+    <link href="./Project 6_ Product Listing Page_files/style.css" rel="stylesheet">
+    <link href="./Project 6_ Product Listing Page_files/css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
-    <div class='title-container'>
+    <div class="title-container">
         <h1>Book List of The Day</h1>
-        <button id='s-cart'>Shopping Cart</button>
+        <button id="s-cart">Shopping Cart</button>
     </div>
 
     <!-- Shopping car section -->
-    <div class='cart-container' id='cartContainer'>
+    <div class="cart-container">
         <h2>Shooping Cart</h2>
-        <div id='cart-item-container'></div>
-        <!-- Promo code section-->
-        <div class="promo-code-container">
+        <div id="cart-item">
+            <img id="-item-img" src="file:///Users/zesc/P6-product-listing-page/Product-Image-Coming-Soon">
+            <p id="item-title">Boook title</p> 
+            <p id="item-quantity">quantity</p>   
+            <button>DELETE</button>
+            <button>UPDATE</button>
+        </div>
+        <!-- Promo code -->
+        <div>
           <p>Promo Code:</p>
-          <input type="text" name="promoCode" id='promo-Code-input'>
-        </div>\
-        <!-- Total price section -->
-        <div class='total-price-container'>
-          <p></p>
+          <input type="text" name="promoCode" id="promocCode">
         </div>
     </div>    
 
     <!-- first product -->
     <div class="p-container container-odd">
-      <img src="Product-Image-Coming-Soon.png" />
+      <img src="./Project 6_ Product Listing Page_files/Product-Image-Coming-Soon.png">
       <div class="description">
-        <p id='product-title'>The Alchemist</p>
+        <p id="product-title">The Alchemist</p>
         <p>By: Paulo Coelho</p>
         <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Dolor emque, eum fuga! Enim nesciunt non dolorum excepturi quisquam iste.</p>
       </div>
       <div class="btn-container">
         <div class="price">
-          <p id='product-price'> Price $10.80</p>
+          <p id="product-price"> Price $10.80</p>
         </div>
         <div class="btn-quantity">
-          <label for='quantity'>Qty:</label>
-          <select class='quantity-value' id='quantity'>
+          <label for="quantity">Qty:</label>
+          <select id="quantity">
             <optgroup label="Qty:">
-              <option selected>0</option>
+              <option selected="">0</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -59,15 +60,15 @@
             </optgroup>
           </select>
         </div>
-        <div class='atc-btn'>
-          <button id='add-cart-0' type="button">ADD TO CART</button><br>
+        <div class="atc-btn">
+          <button type="button">ADD TO CART</button><br>
         </div>
       </div>
     </div>
 
     <!--Second product-->
     <div class="p-container container-even">
-      <img src="Product-Image-Coming-Soon.png" />
+      <img src="./Project 6_ Product Listing Page_files/Product-Image-Coming-Soon.png">
       <div class="description">
         <p>The Mastery</p>
         <p>By: Robert Greene</p>
@@ -79,9 +80,9 @@
         </div>
         <div class="btn-quantity">
           <label for="quantity">Qty:</label>
-          <select class='quantity-value' id='quantity'>
+          <select id="quantity">
             <optgroup label="Qty:">
-              <option selected>0</option>
+              <option selected="">0</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -95,15 +96,15 @@
             </optgroup>
           </select>
         </div>
-        <div class='atc-btn'>
-          <button id='add-cart-1' type="button">ADD TO CART</button><br>
+        <div class="atc-btn">
+          <button type="button">ADD TO CART</button><br>
         </div>
       </div>
     </div>
 
     <!--Third product-->
     <div class="p-container container-odd">
-        <img src="Product-Image-Coming-Soon.png" />
+        <img src="./Project 6_ Product Listing Page_files/Product-Image-Coming-Soon.png">
         <div class="description">
           <p>Think and Grow Rich</p>
           <p>By: Napoleon Hill</p>
@@ -114,10 +115,10 @@
             <p>Price $13.95</p>
           </div>
           <div class="btn-quantity">
-            <label for='quantity'>Qty:</label>
-            <select class='quantity-value' class='quantity-value' id='quantity'>
+            <label for="quantity">Qty:</label>
+            <select id="quantity">
               <optgroup label="Qty:">
-                <option selected>0</option>
+                <option selected="">0</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -131,15 +132,15 @@
               </optgroup>
             </select>
           </div>
-          <div class='atc-btn'>
-            <button id='add-cart-2' type="button">ADD TO CART</button><br>
+          <div class="atc-btn">
+            <button type="button">ADD TO CART</button><br>
           </div>
         </div>
     </div>
 
     <!--Fourth product-->
     <div class="p-container container-even">
-      <img src="Product-Image-Coming-Soon.png" />
+      <img src="./Project 6_ Product Listing Page_files/Product-Image-Coming-Soon.png">
       <div class="description">
         <p>As a Man Thinketh</p>
         <p>By: James Allen</p>
@@ -150,10 +151,10 @@
           <p>Price $5.99</p>
         </div>
         <div class="btn-quantity">
-          <label for='quantity'>Qty:</label>
-          <select class='quantity-value' id='quantity'>
+          <label for="quantity">Qty:</label>
+          <select id="quantity">
             <optgroup label="Qty:">
-                <option selected>0</option>
+                <option selected="">0</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -167,15 +168,15 @@
             </optgroup>
           </select>
         </div>
-        <div class='atc-btn'>
-          <button id='add-cart-3' type="button">ADD TO CART</button><br>
+        <div class="atc-btn">
+          <button type="button">ADD TO CART</button><br>
         </div>
       </div>
     </div>
 
     <!--Fifth product-->
     <div class="p-container container-odd">
-      <img src="Product-Image-Coming-Soon.png" />
+      <img src="./Project 6_ Product Listing Page_files/Product-Image-Coming-Soon.png">
       <div class="description">
         <p>No Excuses: The Power of Self-Discipline</p>
         <p>By: Brian Tracy</p>
@@ -186,10 +187,10 @@
           <p>Price $13.52</p>
         </div>
         <div class="btn-quantity">
-          <label for='quantity'>Qty:</label>
-          <select class='quantity-value' id='quantity'>
+          <label for="quantity">Qty:</label>
+          <select id="quantity">
             <optgroup label="Qty:">
-              <option selected>0</option>
+              <option selected="">0</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -203,15 +204,15 @@
             </optgroup>
           </select>
         </div>
-        <div class='atc-btn'>
-          <button id='add-cart-4' type="button">ADD TO CART</button><br>
+        <div class="atc-btn">
+          <button type="button">ADD TO CART</button><br>
         </div>
       </div>
     </div>
 
     <!--Sixth product-->
     <div class="p-container container-even">
-      <img src="Product-Image-Coming-Soon.png" />
+      <img src="./Project 6_ Product Listing Page_files/Product-Image-Coming-Soon.png">
       <div class="description">
         <p>The 10x Rule: The Only Difference Between Success and Failure</p>
         <p>By: Grant Cardone</p>
@@ -222,10 +223,10 @@
           <p>Price $14.55</p>
         </div>
         <div class="btn-quantity">
-          <label for='quantity'>Qty:</label>
-          <select class='quantity-value' id='quantity'>
+          <label for="quantity">Qty:</label>
+          <select id="quantity">
             <optgroup label="Qty:">
-                <option selected>0</option>
+                <option selected="">0</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -239,15 +240,15 @@
             </optgroup>
           </select>
         </div>
-        <div class='atc-btn'>
-          <button id='add-cart-5' type="button">ADD TO CART</button><br>
+        <div class="atc-btn">
+          <button type="button">ADD TO CART</button><br>
         </div>
       </div>
     </div>
 
     <!--Seventh product-->
     <div class="p-container container-odd">
-      <img src="Product-Image-Coming-Soon.png" />
+      <img src="./Project 6_ Product Listing Page_files/Product-Image-Coming-Soon.png">
       <div class="description">
         <p>The Power of Positive Thinking</p>
         <p>By: Norman Vincent Peale</p>
@@ -258,10 +259,10 @@
             <p>Price $9.19</p>
         </div>
         <div class="btn-quantity">
-          <label for='quantity'>Qty:</label>
-          <select class='quantity-value' id='quantity'>
+          <label for="quantity">Qty:</label>
+          <select id="quantity">
             <optgroup label="Qty:">
-              <option selected>0</option>
+              <option selected="">0</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -275,15 +276,15 @@
             </optgroup>
           </select>
         </div>
-        <div class='atc-btn'>
-          <button id='add-cart-6' type="button">ADD TO CART</button><br>
+        <div class="atc-btn">
+          <button type="button">ADD TO CART</button><br>
         </div>
       </div>
     </div>
 
     <!--Eighth product-->
     <div class="p-container container-even">
-      <img src="Product-Image-Coming-Soon.png" />
+      <img src="./Project 6_ Product Listing Page_files/Product-Image-Coming-Soon.png">
       <div class="description">
         <p>Awaken The Giant Within</p>
         <p>By: Tony Robbins</p>
@@ -294,10 +295,10 @@
           <p>Price $13.26</p>
         </div>
         <div class="btn-quantity">
-          <label for='quantity'>Qty:</label>
-          <select class='quantity-value' id='quantity'>
+          <label for="quantity">Qty:</label>
+          <select id="quantity">
             <optgroup label="Qty:">
-              <option selected>0</option>
+              <option selected="">0</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -311,15 +312,15 @@
             </optgroup>
           </select>
         </div>
-        <div class='atc-btn'>
-          <button id='add-cart-7' type="button">ADD TO CART</button><br>
+        <div class="atc-btn">
+          <button type="button">ADD TO CART</button><br>
         </div>
       </div>
     </div>
 
     <!--Ninth product-->
     <div class="p-container container-odd">
-      <img src="Product-Image-Coming-Soon.png" />
+      <img src="./Project 6_ Product Listing Page_files/Product-Image-Coming-Soon.png">
       <div class="description">
         <p>The War of Art</p>
         <p>By: Steven Pressfield</p>
@@ -330,10 +331,10 @@
           <p>Price $11.19</p>
         </div>
         <div class="btn-quantity">
-          <label for='quantity'>Qty:</label>
-          <select class='quantity-value' id='quantity'>
+          <label for="quantity">Qty:</label>
+          <select id="quantity">
             <optgroup label="Qty:">
-              <option selected>0</option>
+              <option selected="">0</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -347,15 +348,15 @@
             </optgroup>
           </select>
         </div>
-        <div class='atc-btn'>
-          <button id='add-cart-8' type="button">ADD TO CART</button><br>
+        <div class="atc-btn">
+          <button type="button">ADD TO CART</button><br>
         </div>
       </div>
     </div>
 
     <!--Tenth product-->
     <div class="p-container container-even">
-      <img src="Product-Image-Coming-Soon.png" />
+      <img src="./Project 6_ Product Listing Page_files/Product-Image-Coming-Soon.png">
       <div class="description">
         <p>Man's Seach For Meaning</p>
         <p>By: Viktor E. Frankl</p>
@@ -366,10 +367,10 @@
           <p>Price $6.09</p>
         </div>
         <div class="btn-quantity">
-          <label for='quantity'>Qty:</label>
-          <select class='quantity-value' id='quantity'>
+          <label for="quantity">Qty:</label>
+          <select id="quantity">
             <optgroup label="Qty:">
-              <option selected>0</option>
+              <option selected="">0</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -383,8 +384,8 @@
             </optgroup>
           </select>
         </div>
-        <div class='atc-btn'>
-            <button id='add-cart-9' type="button">ADD TO CART</button><br>
+        <div class="atc-btn">
+            <button type="button">ADD TO CART</button><br>
         </div>
       </div>
     </div>
@@ -450,5 +451,6 @@
             </div>
         </div>
     </div> -->
-</body>
-</html>
+
+
+</body></html>
