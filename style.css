@@ -161,10 +161,10 @@ div.cart-containerShow{
 
 div.cart-container h2 {
   text-align: center;
-  border-bottom: 1px solid #3ba3ac;
+  border-bottom: 1px solid #2c97de;
   padding: 10px 30px;
   margin: 10px 30px;
-  color: #3ba3ac;
+  color: #2c97de;
 }
 
 div.cart-item {
@@ -204,9 +204,31 @@ div.cart-item button.cart-item-btn {
   margin: 10px 30px;
 }
 
+.promo-code-container p {
+  margin-bottom: 5px;
+}
+
 .promo-code-container input {
   margin: 0;
   padding: 0;
 }
 
 /* Total price section */
+.total-price-container {
+
+}
+
+.total-price-container p {
+  margin: 3% 30px;
+  
+}
+
+.total-price-container button {
+  width: 100%;
+  color: #fff;
+  background-color: #2c97de;
+  border-radius: 0 0 5px 5px;
+  text-align: left;
+  font-size: 1.2em;
+  padding: 2% 2%;
+}

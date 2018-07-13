@@ -9,6 +9,8 @@ var bookList = [{id: 1, price: 10.80, quantity: 0, bookTitle: "The Alchemist", b
         {id: 9, price: 11.19, quantity: 0, bookTitle: 'The War of Art', bookCover: 'Product-Image-Coming-Soon.png'},
         {id: 10, price: 6.09, quantity: 0, bookTitle: "Man's Search for Meaning", bookCover: 'Product-Image-Coming-Soon.png'}];
 
+var total = 0;
+
 document.addEventListener("DOMContentLoaded", function (event) {
     var bookQuantityList = document.getElementsByClassName('quantity-value');
     var shoppingBtn = document.getElementById('s-cart');
@@ -52,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             btn: document.getElementById('add-cart-9')
         }
     ];
+
+    var totalPrice = document.getElementById('total-price-ans');
     var btn0 = document.getElementById('add-cart-0');
     btn0.addEventListener('click', function () {
         bookList[0].quantity = bookQuantityList[0].value;
@@ -64,11 +68,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var para3 = document.createElement('p');
         var button1 = document.createElement('button');
         var button2 = document.createElement('button');
+        var price = (bookList[0].quantity * bookList[0].price).toFixed(2);
+        var nPrice = parseFloat(price);
         button1.textContent = 'DELETE';
         button2.textContent = 'UPDATE';
         para1.textContent = bookList[0].bookTitle;
         para2.textContent = bookList[0].quantity;
-        para3.textContent = "$" + ((bookList[0].quantity * bookList[0].price).toFixed(2));
+        para3.textContent = "$" + price;
+        total = total + nPrice;
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
         cartItemImg.setAttribute('src', bookList[0].bookCover);
@@ -82,6 +89,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
+        totalPrice.textContent = "Total Price: $" + total.toFixed(2);
+        console.log(typeof total, typeof nPrice);
     });
     var btn1 = document.getElementById('add-cart-1');
     btn1.addEventListener('click', function () {
@@ -95,12 +104,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var para3 = document.createElement("p");
         var button1 = document.createElement("button");
         var button2 = document.createElement("button");
+        var price = (bookList[1].quantity * bookList[1].price).toFixed(2);
         button1.textContent = "DELETE";
         button2.textContent = "UPDATE";
         para1.textContent = bookList[1].bookTitle;
         para2.textContent = bookList[1].quantity;
-        para3.textContent = "$" + (bookList[1].quantity * bookList[1].price).toFixed(2);
-        cartItem.setAttribute('class', 'cart-item');
+        para3.textContent = "$" + price;
+        bookList[10].total = parseFloat(bookList[10].total) + parseFloat(price);
+        cartItem.setAttribute('class', 'cart-item'); 
         itemDesc.setAttribute('class', 'item-description');
         cartItemImg.setAttribute('src', bookList[2].bookCover);
         button1.setAttribute('class', 'cart-item-btn');
@@ -113,6 +124,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
+        var totalPrice = document.getElementById('total-price-ans');
+        totalPrice.textContent = "Total Price: $" + bookList[10].total;
     });
 
     var btn2 = document.getElementById('add-cart-2');
@@ -127,11 +140,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var para3 = document.createElement("p");
         var button1 = document.createElement("button");
         var button2 = document.createElement("button");
+        var price = 
         button1.textContent = "DELETE";
         button2.textContent = "UPDATE";
         para1.textContent = bookList[2].bookTitle;
         para2.textContent = bookList[2].quantity;
         para3.textContent = "$" + (bookList[2].quantity * bookList[2].price).toFixed(2);
+        bookList[10].total = (bookList[10].total + parseFloat((bookList[2].quantity * bookList[2].price).toFixed(2))).toFixed(2);
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
         cartItemImg.setAttribute('src', bookList[2].bookCover);
@@ -145,6 +160,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
+        var totalPrice = document.getElementById('total-price-ans');
+        totalPrice.textContent = "Total Price: $" + bookList[10].total;
     });
 
     var btn3 = document.getElementById('add-cart-3');
@@ -164,11 +181,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         para1.textContent = bookList[3].bookTitle;
         para2.textContent = bookList[3].quantity;
         para3.textContent = "$" + (bookList[3].quantity * bookList[3].price).toFixed(2);
+        bookList[10].total = (bookList[10].total + parseFloat((bookList[3].quantity * bookList[3].price).toFixed(2))).toFixed(2);
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
         cartItemImg.setAttribute('src', bookList[3].bookCover);
         button1.setAttribute('class', 'cart-item-btn');
-        button2.setAttribute('class', 'cart-item-btn') ;
+        button2.setAttribute('class', 'cart-item-btn');
         cartItemContainer.appendChild(cartItem);
         cartItem.appendChild(cartItemImg);
         cartItem.appendChild(itemDesc);
@@ -177,6 +195,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
+        var totalPrice = document.getElementById('total-price-ans');
+        totalPrice.textContent = "Total Price: $" + bookList[10].total;
     });
 
     var btn4 = document.getElementById('add-cart-4');
@@ -196,11 +216,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         para1.textContent = bookList[4].bookTitle;
         para2.textContent = bookList[4].quantity;
         para3.textContent = "$" + (bookList[4].quantity * bookList[4].price).toFixed(2);
+        bookList[10].total = (bookList[10].total + parseFloat((bookList[4].quantity * bookList[4].price).toFixed(2))).toFixed(2);
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
         cartItemImg.setAttribute('src', bookList[4].bookCover);
         button1.setAttribute('class', 'cart-item-btn');
-        button2.setAttribute('class', 'cart-item-btn') ;
+        button2.setAttribute('class', 'cart-item-btn');
         cartItemContainer.appendChild(cartItem);
         cartItem.appendChild(cartItemImg);
         cartItem.appendChild(itemDesc);
@@ -209,6 +230,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
+        var totalPrice = document.getElementById('total-price-ans');
+        totalPrice.textContent = "Total Price: $" + bookList[10].total;
     });
 
     var btn5 = document.getElementById('add-cart-5');
@@ -228,11 +251,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         para1.textContent = bookList[5].bookTitle;
         para2.textContent = bookList[5].quantity;
         para3.textContent = "$" + (bookList[5].quantity * bookList[5].price).toFixed(2);
+        bookList[10].total = (bookList[10].total + parseFloat((bookList[5].quantity * bookList[5].price).toFixed(2))).toFixed(2);
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
         cartItemImg.setAttribute('src', bookList[5].bookCover);
         button1.setAttribute('class', 'cart-item-btn');
-        button2.setAttribute('class', 'cart-item-btn') ;
+        button2.setAttribute('class', 'cart-item-btn');
         cartItemContainer.appendChild(cartItem);
         cartItem.appendChild(cartItemImg);
         cartItem.appendChild(itemDesc);
@@ -241,6 +265,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
+        var totalPrice = document.getElementById('total-price-ans');
+        totalPrice.textContent = "Total Price: $" + bookList[10].total;
     });
 
     var btn6 = document.getElementById('add-cart-6');
@@ -260,11 +286,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         para1.textContent = bookList[6].bookTitle;
         para2.textContent = bookList[6].quantity;
         para3.textContent = "$" + (bookList[6].quantity * bookList[6].price).toFixed(2);
+        bookList[10].total = (bookList[10].total + parseFloat((bookList[6].quantity * bookList[6].price).toFixed(2))).toFixed(2);
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
         cartItemImg.setAttribute('src', bookList[6].bookCover);
         button1.setAttribute('class', 'cart-item-btn');
-        button2.setAttribute('class', 'cart-item-btn') ;
+        button2.setAttribute('class', 'cart-item-btn');
         cartItemContainer.appendChild(cartItem);
         cartItem.appendChild(cartItemImg);
         cartItem.appendChild(itemDesc);
@@ -273,6 +300,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
+        var totalPrice = document.getElementById('total-price-ans');
+        totalPrice.textContent = "Total Price: $" + bookList[10].total;
     });
 
     var btn7 = document.getElementById('add-cart-7');
@@ -292,11 +321,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         para1.textContent = bookList[7].bookTitle;
         para2.textContent = bookList[7].quantity;
         para3.textContent = "$" + (bookList[7].quantity * bookList[7].price).toFixed(2);
+        bookList[10].total = (bookList[10].total + parseFloat((bookList[7].quantity * bookList[7].price).toFixed(2))).toFixed(2);
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
         cartItemImg.setAttribute('src', bookList[7].bookCover);
         button1.setAttribute('class', 'cart-item-btn');
-        button2.setAttribute('class', 'cart-item-btn') ;
+        button2.setAttribute('class', 'cart-item-btn');
         cartItemContainer.appendChild(cartItem);
         cartItem.appendChild(cartItemImg);
         cartItem.appendChild(itemDesc);
@@ -305,6 +335,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
+        var totalPrice = document.getElementById('total-price-ans');
+        totalPrice.textContent = "Total Price: $" + bookList[10].total;
     });
 
     var btn8 = document.getElementById('add-cart-8');
@@ -324,11 +356,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         para1.textContent = bookList[8].bookTitle;
         para2.textContent = bookList[8].quantity;
         para3.textContent = "$" + (bookList[8].quantity * bookList[8].price).toFixed(2);
+        bookList[10].total = (bookList[10].total + parseFloat((bookList[8].quantity * bookList[8].price).toFixed(2))).toFixed(2);
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
         cartItemImg.setAttribute('src', bookList[8].bookCover);
         button1.setAttribute('class', 'cart-item-btn');
-        button2.setAttribute('class', 'cart-item-btn') ;
+        button2.setAttribute('class', 'cart-item-btn');
         cartItemContainer.appendChild(cartItem);
         cartItem.appendChild(cartItemImg);
         cartItem.appendChild(itemDesc);
@@ -337,6 +370,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
+        var totalPrice = document.getElementById('total-price-ans');
+        totalPrice.textContent = "Total Price: $" + bookList[10].total;
     });
 
     var btn9 = document.getElementById('add-cart-9');
@@ -356,11 +391,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         para1.textContent = bookList[9].bookTitle;
         para2.textContent = bookList[9].quantity;
         para3.textContent = "$" + (bookList[9].quantity * bookList[9].price).toFixed(2);
+        bookList[10].total = (bookList[10].total + parseFloat((bookList[9].quantity * bookList[9].price).toFixed(2))).toFixed(2);
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
         cartItemImg.setAttribute('src', bookList[9].bookCover);
         button1.setAttribute('class', 'cart-item-btn');
-        button2.setAttribute('class', 'cart-item-btn') ;
+        button2.setAttribute('class', 'cart-item-btn');
         cartItemContainer.appendChild(cartItem);
         cartItem.appendChild(cartItemImg);
         cartItem.appendChild(itemDesc);
@@ -369,5 +405,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
-    });
+        var totalPrice = document.getElementById('total-price-ans');
+        totalPrice.textContent = "Total Price: $" + bookList[10].total;
+    }); 
 });
