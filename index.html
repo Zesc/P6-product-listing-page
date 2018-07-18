@@ -18,7 +18,18 @@
     <!-- Shopping car section -->
     <div class='cart-container' id='cartContainer'>
         <h2>Shooping Cart</h2>
-        <div id='cart-item-container'></div>
+        <div id='cart-item-container'>
+          <div class="cart-item">
+            <img src="Product-Image-Coming-Soon.png" alt="book image">
+            <div class="item-description">
+              <p>Book title</p>
+              <p>Qty:</p>
+              <input id="cart-item-qty" type="number" size="4" maxlength="4">
+              <p>book price</p>
+            </div>
+            <button class="cart-item-btn">DELETE</button>
+          </div>
+        </div>
         <!-- Promo code section-->
         <div class="promo-code-container">
           <p>Promo Code:</p>
@@ -392,66 +403,5 @@
       </div>
     </div>
 </div>
-    <!--Shopping cart-->
-    <!-- <div class="cart-container">
-        <div class="col-left">
-            <div class="cart-title">
-                <h2>SHOPPING CART SUMMARY</h2>
-            </div>
-            <div class="cart-item">
-                <img>
-                <div class="cart-item-desc">
-                    <p>Item name 1</p>
-                    <p>Quantity: ##</p>
-                </div>
-            </div>
-            <div class="cart-item">
-                <img>
-                <div class="cart-item-desc">
-                    <p>Item name 2</p>
-                    <p>Quantity: ##</p>
-                </div>
-            </div>
-            <div class="cart-item">
-                <img>
-                <div class='cart-item-desc'>
-                    <p>Item name 3</p>
-                    <p>Quantity: ##</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-right">
-            <div class="promo-container">
-                <div>
-                    <input type="tec" name="promo code" placeholder="ENTER PROMO CODE">
-                </div>
-                <div>
-                    <button class="btn-apply">APPLY</button>
-                </div>
-            </div>
-            <div class='order-container'>
-                <h3>ORDER SUMMARY</h3>
-                <div class="order-sub-container">
-                    <div>Subtotal:</div>
-                    <div>$xx.xx</div>
-                </div>
-                <div class="order-sub-container">
-                    <div>Discount:</div>
-                    <div>$xx.xx</div>
-                </div>
-                <div class="order-sub-container">
-                    <div>Estimated Shipping:</div>
-                    <div>$xx.xx</div>
-                </div>
-                <div class="order-sub-container">
-                    <div>ORDER TOTAL:</div>
-                    <div>$xx.xx</div>
-                </div>
-                <div class='checkout-container'>
-                    <button class="btn-checkout">PROCEED TO CHECKOUT</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
 </body>
 </html>

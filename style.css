@@ -162,10 +162,6 @@ div.cart-container {
   transition: .9s right ease-in-out;
 }
 
-div.cart-containerShow{
-  right: 0;
-}
-
 div.cart-container h2 {
   text-align: center;
   border-bottom: 1px solid #2c97de;
@@ -196,6 +192,10 @@ div.cart-item div.item-description {
 div.cart-item div.item-description > p{
   font-size: .8em;
   margin: 10px 0 0 0;
+}
+
+div.cart-item input#cart-item-qty {
+  
 }
 
 div.cart-item button.cart-item-btn {
