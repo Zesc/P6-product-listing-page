@@ -150,7 +150,7 @@ div.cart-container {
   z-index: 99;
   width: 30%;
   background-color: #fff;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0 0 0 3px;
   box-shadow: 0 1px 5px rgba(59, 163, 172, 0.15);
   transition: .9s right ease-in-out;
 }
@@ -220,15 +220,17 @@ div.cart-item button.cart-item-btn {
 
 .total-price-container p {
   margin: 3% 30px;
-  
+
 }
 
 .total-price-container button {
   width: 100%;
   color: #fff;
   background-color: #2c97de;
-  border-radius: 0 0 5px 5px;
-  text-align: left;
+  border-radius: 0 0 0 5px;
+  border: 1px solid #2c97de;
+  text-align: center;
+
   font-size: 1.2em;
-  padding: 2% 2%;
+  padding: 4% 0;
 }
