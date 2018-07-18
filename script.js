@@ -101,6 +101,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
+        button1.addEventListener('click', function () {
+            cartItemContainer.removeChild(cartItem);
+        });
     });
 
     btn1.addEventListener('click', function () {
@@ -136,6 +139,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
+        button1.addEventListener('click', function () {
+            cartItemContainer.removeChild(cartItem);
+        });
     });
     btn2.addEventListener('click', function () {
         var cartItemContainer = document.getElementById('cart-item-container');
@@ -170,6 +176,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
+        button1.addEventListener('click', function () {
+            cartItemContainer.removeChild(cartItem);
+        });
     });
 
     btn3.addEventListener('click', function () {
@@ -205,6 +214,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
+        button1.addEventListener('click', function () {
+            cartItemContainer.removeChild(cartItem);
+        });
     });
 
     btn4.addEventListener('click', function () {
@@ -240,6 +252,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
+        button1.addEventListener('click', function () {
+            cartItemContainer.removeChild(cartItem);
+        });
     });
 
     btn5.addEventListener('click', function () {
@@ -275,6 +290,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
+        button1.addEventListener('click', function () {
+            cartItemContainer.removeChild(cartItem);
+        });
     });
 
     btn6.addEventListener('click', function () {
@@ -310,6 +328,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
+        button1.addEventListener('click', function () {
+            cartItemContainer.removeChild(cartItem);
+        });
     });
 
     btn7.addEventListener('click', function () {
@@ -345,6 +366,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
+        button1.addEventListener('click', function () {
+            cartItemContainer.removeChild(cartItem);
+        });
     });
 
     btn8.addEventListener('click', function () {
@@ -380,6 +404,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
+        button1.addEventListener('click', function () {
+            cartItemContainer.removeChild(cartItem);
+        });
     });
 
     btn9.addEventListener('click', function () {
@@ -415,7 +442,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
+        button1.addEventListener('click', function () {
+            cartItemContainer.removeChild(cartItem);
+        });
     }); 
-
-
 });
