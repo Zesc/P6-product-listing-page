@@ -4,6 +4,11 @@ body{
   font-family: 'Robot', sans-serif;
 }
 
+div.shopping-list {
+  position: relative;
+  overflow: hidden;
+}
+
 div.title-container {
   background-color: #3ba3ac;
   width: 100%;
@@ -39,10 +44,12 @@ div.title-container h1 {
 
 div.container-even {
   background-color: #f9f9f9;
+  position: relative;
 }
 
 div.container-odd {
   background-color: #f2f2f2;
+  position: relative;
 }
 
 div.p-container {
