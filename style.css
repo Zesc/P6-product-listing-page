@@ -195,7 +195,12 @@ div.cart-item div.item-description > p{
 }
 
 div.cart-item input#cart-item-qty {
-  
+  width: 3em;
+}
+
+div.cart-item input#cart-item-qty::-webkit-inner-spin-button,
+div.cart-item input#cart-item-qty::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
 
 div.cart-item button.cart-item-btn {
@@ -221,9 +226,9 @@ div.cart-item button.cart-item-btn {
 }
 
 /* Total price section */
-.total-price-container {
+/* .total-price-container {
 
-}
+} */
 
 .total-price-container p {
   margin: 3% 30px;
