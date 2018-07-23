@@ -2,7 +2,7 @@ var bookList = [{id: 1, price: 10.80, quantity: 0, bookTitle: "The Alchemist", b
         {id: 2, price: 15.68, quantity: 0, bookTitle: 'The Mastery', bookCover: 'Product-Image-Coming-Soon.png'},
         {id: 3, price: 13.95, quantity: 0, bookTitle: 'Think and Grow Rich', bookCover: 'Product-Image-Coming-Soon.png'},
         {id: 4, price: 5.99, quantity: 0, bookTitle: 'As a Man Thinked', bookCover: 'Product-Image-Coming-Soon.png'},
-        {id: 5, price: 13.52, quantity: 0, bookTitle: 'No Excuses: The Power of Self-Discipline', bookCover: 'Product-Image-Coming-Soon.png'},
+        {id: 5, price: 13.52, quantity: 0, bookTitle: 'No Excuses: The Power of ...', bookCover: 'Product-Image-Coming-Soon.png'},
         {id: 6, price: 14.55, quantity: 0, bookTitle: 'The 10X Rule The Only...', bookCover: 'Product-Image-Coming-Soon.png'},
         {id: 7, price: 9.19, quantity: 0, bookTitle: 'The Power of Positive Thinking', bookCover: 'Product-Image-Coming-Soon.png'},
         {id: 8, price: 13.26, quantity: 0, bookTitle: 'Awaken The Giant Within', bookCover: 'Product-Image-Coming-Soon.png'},
@@ -288,6 +288,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var para1 = document.createElement('p');
         var para2 = document.createElement('p');
         var para3 = document.createElement('p');
+        var qtyInput = document.createElement('input');
         var button1 = document.createElement('button');
         var button2 = document.createElement('button');
         bookList[4].quantity = bookQuantityList[4].value;
@@ -296,8 +297,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         button1.textContent = "DELETE";
         button2.textContent = "UPDATE";
         para1.textContent = bookList[4].bookTitle;
-        para2.textContent = bookList[4].quantity;
+        para2.textContent = "Qty:";
         para3.textContent = "$" + (bookList[4].quantity * bookList[4].price).toFixed(2);
+        qtyInput.setAttribute('id', 'cart-item-qty');
+        qtyInput.type = 'number';
         total = total + nPrice;
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
@@ -309,12 +312,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(itemDesc);
         itemDesc.appendChild(para1);
         itemDesc.appendChild(para2);
+        itemDesc.appendChild(qtyInput);
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
+        
         button1.addEventListener('click', function () {
             cartItemContainer.removeChild(cartItem);
+        });
+
+        button2.addEventListener('click', function (event) {
+            bookList[4].quantity = qtyInput.value;
+            price = (bookList[4].quantity * bookList[4].price).toFixed(2);
+            para3.textContent = price;
+            nprice = parseFloat(price);
+            total = nprice;
+            totalPrice.textContent = "Total Price: $" + total.toFixed(2);
         });
     });
 
@@ -326,6 +340,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var para1 = document.createElement('p');
         var para2 = document.createElement('p');
         var para3 = document.createElement('p');
+        var qtyInput = document.createElement('input');
         var button1 = document.createElement('button');
         var button2 = document.createElement('button');
         bookList[5].quantity = bookQuantityList[5].value;
@@ -334,8 +349,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         button1.textContent = "DELETE";
         button2.textContent = "UPDATE";
         para1.textContent = bookList[5].bookTitle;
-        para2.textContent = bookList[5].quantity;
+        para2.textContent = "Qty:";
         para3.textContent = "$" + (bookList[5].quantity * bookList[5].price).toFixed(2);
+        qtyInput.setAttribute('id', 'cart-item-qty');
+        qtyInput.type = 'number';
         total = total + nPrice;
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
@@ -347,12 +364,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(itemDesc);
         itemDesc.appendChild(para1);
         itemDesc.appendChild(para2);
+        itemDesc.appendChild(qtyInput);
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
         button1.addEventListener('click', function () {
             cartItemContainer.removeChild(cartItem);
+        });
+
+        button2.addEventListener('click', function (event) {
+            bookList[5].quantity = qtyInput.value;
+            price = (bookList[5].quantity * bookList[5].price).toFixed(2);
+            para3.textContent = price;
+            nprice = parseFloat(price);
+            total = nprice;
+            totalPrice.textContent = "Total Price: $" + total.toFixed(2);
         });
     });
 
@@ -364,6 +391,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var para1 = document.createElement('p');
         var para2 = document.createElement('p');
         var para3 = document.createElement('p');
+        var qtyInput = document.createElement('input');
         var button1 = document.createElement('button');
         var button2 = document.createElement('button');
         bookList[6].quantity = bookQuantityList[6].value;
@@ -372,8 +400,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         button1.textContent = "DELETE";
         button2.textContent = "UPDATE";
         para1.textContent = bookList[6].bookTitle;
-        para2.textContent = bookList[6].quantity;
+        para2.textContent = "Qty:";
         para3.textContent = "$" + (bookList[6].quantity * bookList[6].price).toFixed(2);
+        qtyInput.setAttribute('id', 'cart-item-qty');
+        qtyInput.type = 'number';
         total = total + nPrice;
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
@@ -385,12 +415,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(itemDesc);
         itemDesc.appendChild(para1);
         itemDesc.appendChild(para2);
+        itemDesc.appendChild(qtyInput);
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
         button1.addEventListener('click', function () {
             cartItemContainer.removeChild(cartItem);
+        });
+
+        button2.addEventListener('click', function (event) {
+            bookList[6].quantity = qtyInput.value;
+            price = (bookList[6].quantity * bookList[6].price).toFixed(2);
+            para3.textContent = price;
+            nprice = parseFloat(price);
+            total = nprice;
+            totalPrice.textContent = "Total Price: $" + total.toFixed(2);
         });
     });
 
@@ -402,6 +442,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var para1 = document.createElement('p');
         var para2 = document.createElement('p');
         var para3 = document.createElement('p');
+        var qtyInput = document.createElement('input');
         var button1 = document.createElement('button');
         var button2 = document.createElement('button');
         bookList[7].quantity = bookQuantityList[7].value;
@@ -410,8 +451,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         button1.textContent = "DELETE";
         button2.textContent = "UPDATE";
         para1.textContent = bookList[7].bookTitle;
-        para2.textContent = bookList[7].quantity;
+        para2.textContent = "Qty:";
         para3.textContent = "$" + (bookList[7].quantity * bookList[7].price).toFixed(2);
+        qtyInput.setAttribute('id', 'cart-item-qty');
+        qtyInput.type = 'number';
         total = total + nPrice;
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
@@ -423,12 +466,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(itemDesc);
         itemDesc.appendChild(para1);
         itemDesc.appendChild(para2);
+        itemDesc.appendChild(qtyInput);
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
         button1.addEventListener('click', function () {
             cartItemContainer.removeChild(cartItem);
+        });
+
+        button2.addEventListener('click', function (event) {
+            bookList[7].quantity = qtyInput.value;
+            price = (bookList[7].quantity * bookList[7].price).toFixed(2);
+            para3.textContent = price;
+            nprice = parseFloat(price);
+            total = nprice;
+            totalPrice.textContent = "Total Price: $" + total.toFixed(2);
         });
     });
 
@@ -440,6 +493,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var para1 = document.createElement('p');
         var para2 = document.createElement('p');
         var para3 = document.createElement('p');
+        var qtyInput = document.createElement('input');
         var button1 = document.createElement('button');
         var button2 = document.createElement('button');
         bookList[8].quantity = bookQuantityList[8].value;
@@ -448,8 +502,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         button1.textContent = "DELETE";
         button2.textContent = "UPDATE";
         para1.textContent = bookList[8].bookTitle;
-        para2.textContent = bookList[8].quantity;
+        para2.textContent = "Qty:";
         para3.textContent = "$" + (bookList[8].quantity * bookList[8].price).toFixed(2);
+        qtyInput.setAttribute('id', 'cart-item-qty');
+        qtyInput.type = 'number'; 
         total = total + nPrice;
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
@@ -461,12 +517,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(itemDesc);
         itemDesc.appendChild(para1);
         itemDesc.appendChild(para2);
+        itemDesc.appendChild(qtyInput);
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
         button1.addEventListener('click', function () {
             cartItemContainer.removeChild(cartItem);
+        });
+
+        button2.addEventListener('click', function (event) {
+            bookList[8].quantity = qtyInput.value;
+            price = (bookList[8].quantity * bookList[8].price).toFixed(2);
+            para3.textContent = price;
+            nprice = parseFloat(price);
+            total = nprice;
+            totalPrice.textContent = "Total Price: $" + total.toFixed(2);
         });
     });
 
@@ -478,6 +544,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var para1 = document.createElement('p');
         var para2 = document.createElement('p');
         var para3 = document.createElement('p');
+        var qtyInput = document.createElement('input');
         var button1 = document.createElement('button');
         var button2 = document.createElement('button');
         bookList[9].quantity = bookQuantityList[9].value;
@@ -486,8 +553,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         button1.textContent = "DELETE";
         button2.textContent = "UPDATE";
         para1.textContent = bookList[9].bookTitle;
-        para2.textContent = bookList[9].quantity;
+        para2.textContent = "Qty:";
         para3.textContent = "$" + (bookList[9].quantity * bookList[9].price).toFixed(2);
+        qtyInput.setAttribute('id', 'cart-item-qty');
+        qtyInput.type = 'number'; 
         total = total + nPrice;
         cartItem.setAttribute('class', 'cart-item');
         itemDesc.setAttribute('class', 'item-description');
@@ -499,12 +568,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
         cartItem.appendChild(itemDesc);
         itemDesc.appendChild(para1);
         itemDesc.appendChild(para2);
+        itemDesc.appendChild(qtyInput);
         itemDesc.appendChild(para3);
         cartItem.appendChild(button1);
         cartItem.appendChild(button2);
         totalPrice.textContent = "Total Price: $" + total.toFixed(2);
+        
         button1.addEventListener('click', function () {
             cartItemContainer.removeChild(cartItem);
+        });
+
+        button2.addEventListener('click', function (event) {
+            bookList[8].quantity = qtyInput.value;
+            price = (bookList[8].quantity * bookList[8].price).toFixed(2);
+            para3.textContent = price;
+            nprice = parseFloat(price);
+            total = nprice;
+            totalPrice.textContent = "Total Price: $" + total.toFixed(2);
         });
     }); 
 });
