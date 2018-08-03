@@ -225,11 +225,19 @@ div.cart-item button.cart-item-btn {
   padding: 0;
 }
 
+#promo-code-btn {
+  color: #2c97de;
+  border-radius: 5px;
+  border: 1px solid #2c97de;
+  padding: 1%;
+}
+
+#promo-code-btn:hover {
+  color: #fff;
+  background-color: #2c97de;
+}
+
 /* Total price section */
-/* .total-price-container {
-
-} */
-
 .total-price-container p {
   margin: 3% 30px;
 
